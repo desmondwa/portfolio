@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+        <title></title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#intro">Main</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div id="intro">
+                <h1 class="text-center">Intro text</h1>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nisl ut purus blandit sagittis. Suspendisse potenti. Aliquam faucibus justo nec sodales bibendum. Duis venenatis metus quam, ut laoreet erat pellentesque sed. Duis velit ligula, pretium ac efficitur ac, vestibulum ut risus. Vestibulum fringilla purus et mauris finibus elementum. Mauris lobortis facilisis tortor sollicitudin lacinia.
+                </p>
+
+              
+            </div>
+
+            <div id="about">
+                <h1 class="text-center">About Me</h1>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus nisl ut purus blandit sagittis. Suspendisse potenti. Aliquam faucibus justo nec sodales bibendum. Duis venenatis metus quam, ut laoreet erat pellentesque sed. Duis velit ligula, pretium ac efficitur ac, vestibulum ut risus. Vestibulum fringilla purus et mauris finibus elementum. Mauris lobortis facilisis tortor sollicitudin lacinia.
+                </p>
+
+                
+            </div>
+
+            <div id="portfolio">
+                <h1 class="text-center">Portfolio</h1>
+
+
+                <div class="block text-center">
+                    <div>
+                         <p>Screenshot Here</p>
+                        <p><b>Project Name</b></p>
+                        <p>Project Description</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1 class="text-center">Contact Me</h1>
+
+                <p class="text-center">
+                    <a href="https://github.com" target="_blank">Link to Github</a>
+                    <br><br>
+                    <a href="https://linkedin.com" target="_blank">Link to Linkedin</a>
+                    <br><br>
+                    <a href="mailto:desmond.wareham@gmail.com" target="_blank">Link to Email</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $("nav a").on("click", function(e) {
+                var section = $(this).attr("href");
+
+                $("html, body").animate({ scrollTop: $(section).offset().top - $("nav").height() - 20 }, 500);
+            });
+        </script>
+    </body>
+</html>
